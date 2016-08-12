@@ -5,12 +5,12 @@
     <title>Gllacy Shop - Каталог</title>
   </head>
   <body>
-    <header class="header_main">
+    <header class="header_catalog">
       <div class="container">
-        <a href="index.html">
-          <img class="logo_index" src="#" alt="Gllacy Shop">
-        </a>
         <nav class="catalog_index">
+          <a href="index.html">
+            <img class="logo_index" src="#" alt="Gllacy Shop">
+          </a>
           <ul>
             <li>
               Каталог
@@ -52,9 +52,17 @@
         <select name="sorting">
           <option value="popularity">по популярности</option>
         </select>
-        <label for="price">Цена: 100 руб. - 500 руб.</label>
+        <span>Цена: 100 руб. - 500 руб.</span>
         <!--Должно быть два ползунка-->
-        <input type="range" name="price" min="100" max="500" step="1">
+        <!--Slider_left/right - точки/ползунки,
+        scale -вся шкала,
+        range - только линия от ползунка до ползунка-->
+        <div class="slider">
+          <div class="slider_left"></div>
+          <div class="slider_right"></div>
+          <div class="scale"></div>
+          <div class="range"></div>
+        </div>
         <label for="fatness">Жирность:</label>
         <label>
           <input type="radio" name="fatness" value="0%">
@@ -72,107 +80,107 @@
           <input type="radio" name="fatness" value="above30%">
           выше 30%
         </label><br>
-        <input type="checkbox" name="fillers1" checked>
+        <input type="checkbox" name="fillers" id="fillers1" checked>
         <label for="fillers1">шоколадные</label>
-        <input type="checkbox" name="fillers2" checked>
+        <input type="checkbox" name="fillers" id="fillers2" checked>
         <label for="fillers2">сахарные присыпки</label>
-        <input type="checkbox" name="fillers3">
+        <input type="checkbox" name="fillers" id="fillers3">
         <label for="fillers3">фрукты</label>
-        <input type="checkbox" name="fillers4">
+        <input type="checkbox" name="fillers" id="fillers4">
         <label for="fillers4">сиропы</label>
-        <input type="checkbox" name="fillers5">
+        <input type="checkbox" name="fillers" id="fillers5">
         <label for="fillers5">джемы</label>
         <button type="submit">Применить</button>
       </form>
       <div class="catalog_content">
-        <article>
+        <div>
           <img class="ice_cream" src="#" alt="">
           <b>310&#8381/кг</b>
           <p>Сливочное с
             апельсиновым джемом
             и цитрусовой стружкой</p>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
-        </article>
-        <article>
+        </div>
+        <div>
           <img class="ice_cream" src="#" alt="">
           <b>380&#8381/кг</b>
           <p>Сливочно-кофейное с
             кусочками шоколада</p>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
-        </article>
-        <article>
+        </div>
+        <div>
           <img class="ice_cream" src="#" alt="">
           <b>355&#8381/кг</b>
           <p>Сливочно-клубничное с
             присыпкой из белого
             шоколада</p>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
-        </article>
-        <article>
+        </div>
+        <div>
           <img class="ice_cream" src="#" alt="">
           <b>415&#8381/кг</b>
           <p>Сливочное крем-брюле
             с карамельной
             подливкой</p>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
-        </article>
-        <article>
+        </div>
+        <div>
           <img class="ice_cream" src="#" alt="">
           <b>325&#8381/кг</b>
           <p>Сливочное с брусничным
           джемом</p>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
-        </article>
-        <article>
+        </div>
+        <div>
           <img class="ice_cream" src="#" alt="">
           <b>410&#8381/кг</b>
           <p>Сливочно-черничное с цельными
           ягодами черники</p>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
-        </article>
-        <article>
+        </div>
+        <div>
           <img class="ice_cream" src="#" alt="">
           <b>375&#8381/кг</b>
           <p>Сливочно-лимонное с
           карамельной присыпкой</p>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
-        </article>
-        <article>
+        </div>
+        <div>
           <img class="ice_cream" src="#" alt="">
           <b>320&#8381/кг</b>
           <p>Сливочное с шоколадной
           стружкой</p>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
-        </article>
-        <article>
+        </div>
+        <div>
           <img class="ice_cream" src="#" alt="">
           <b>440&#8381/кг</b>
           <p>Сливочно-ванильное с
           кусочками шоколада</p>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
-        </article>
-        <article>
+        </div>
+        <div>
           <img class="ice_cream" src="#" alt="">
           <b>435&#8381/кг</b>
           <p>Сливочное с ментоловым
             сиропом</p>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
-        </article>
-        <article>
+        </div>
+        <div>
           <img class="ice_cream" src="#" alt="">
           <b>355&#8381/кг</b>
           <p>Сливочное с кусочками черного
           шоколада</p>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
-        </article>
-        <article>
+        </div>
+        <div>
           <img class="ice_cream" src="#" alt="">
           <b>420&#8381/кг</b>
           <p>Сливочное с мятным сиропом</p>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
-        </article>
+        </div>
       </div>
-      <section class="pages">
+      <div class="pages">
         <ul>
         <li>
           <
@@ -196,31 +204,31 @@
           <a href="#">></a>
         </li>
       </ul>
-      </section>
+    </div>
     </main>
     <footer>
       <div class="container">
-        <section class="social">
+        <div class="social">
           <img class="social_tw" src="#">
           <img class="social_inst" src="#">
           <img class="social_fb" src="#">
           <img class="social_vk" src="#">
-        </section>
-        <section class="footer_info">
-          <section class="footer_info_left">
+        </div>
+        <div class="footer_info">
+          <div class="footer_info_left">
             <img class="heart" src="#">
             <a href="#">Для поставщиков</a>
             <a href="#">О прозводстве</a>
-          </section>
-          <section class="footer_info_right">
+          </div>
+          <div class="footer_info_right">
             <a href="#">Наши документы</a>
             <a href="#">Экологические стандарты</a>
-          </section>
-        </section>
-        <section class="html_academy">
+          </div>
+        </div>
+        <div class="html_academy">
           <img class="logo_academy" src="#">
           Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2016
-        </section>
+        </div>
       </div>
     </footer>
   </body>
