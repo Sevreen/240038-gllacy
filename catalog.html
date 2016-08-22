@@ -48,72 +48,83 @@
       </ul>
       <h1>Сливочное мороженое</h1>
       <form action="#" method="post">
-        <label for="sorting">Сортировка:</label>
-        <select name="sorting">
-          <option value="popularity">по популярности</option>
-        </select>
-        <span>Цена: 100 руб. - 500 руб.</span>
-        <!--Должно быть два ползунка-->
-        <!--Slider_left/right - точки/ползунки,
-        scale -вся шкала,
-        range - только линия от ползунка до ползунка-->
-        <div class="slider">
-          <div class="slider_left"></div>
-          <div class="slider_right"></div>
-          <div class="scale"></div>
-          <div class="range"></div>
+        <div class="sorting_catalog">
+          <label for="sorting">Сортировка:</label>
+          <select name="sorting">
+            <option value="popularity">по популярности</option>
+          </select>
         </div>
-        <label for="fatness">Жирность:</label>
-        <label>
-          <input type="radio" name="fatness" value="0%">
-          0%
-        </label>
-        <label>
-          <input type="radio" name="fatness" value="10%" checked>
-          до 10%
-        </label>
-        <label>
-          <input type="radio" name="fatness" value="30%">
-          до 30%
-        </label>
-        <label>
-          <input type="radio" name="fatness" value="above30%">
-          выше 30%
-        </label><br>
-        <input type="checkbox" name="fillers" id="fillers1" checked>
-        <label for="fillers1">шоколадные</label>
-        <input type="checkbox" name="fillers" id="fillers2" checked>
-        <label for="fillers2">сахарные присыпки</label>
-        <input type="checkbox" name="fillers" id="fillers3">
-        <label for="fillers3">фрукты</label>
-        <input type="checkbox" name="fillers" id="fillers4">
-        <label for="fillers4">сиропы</label>
-        <input type="checkbox" name="fillers" id="fillers5">
-        <label for="fillers5">джемы</label>
-        <button type="submit">Применить</button>
+        <div class="price_catalog">
+          <span>Цена: 100 руб. - 500 руб.</span>
+          <!--Должно быть два ползунка-->
+          <!--Slider_left/right - точки/ползунки,
+          scale -вся шкала,
+          range - только линия от ползунка до ползунка-->
+          <div class="slider">
+            <div class="slider_left"></div>
+            <div class="slider_right"></div>
+            <div class="scale"></div>
+            <div class="range"></div>
+          </div>
+        </div>
+        <div class="fatness_catalog">
+          <label for="fatness">Жирность:</label>
+          <label>
+            <input type="radio" name="fatness" value="0%">
+            0%
+          </label>
+          <label>
+            <input type="radio" name="fatness" value="10%" checked>
+            до 10%
+          </label>
+          <label>
+            <input type="radio" name="fatness" value="30%">
+            до 30%
+          </label>
+          <label>
+            <input type="radio" name="fatness" value="above30%">
+            выше 30%
+          </label>
+        </div>
+        <div class="fillers_catalog>"
+          <label for="fillers">Наполнители:</label>
+          <div class="fillers_box">
+            <input type="checkbox" name="fillers" id="fillers1" checked>
+            <label for="fillers1">шоколадные</label>
+            <input type="checkbox" name="fillers" id="fillers2" checked>
+            <label for="fillers2">сахарные присыпки</label>
+            <input type="checkbox" name="fillers" id="fillers3">
+            <label for="fillers3">фрукты</label>
+            <input type="checkbox" name="fillers" id="fillers4">
+            <label for="fillers4">сиропы</label>
+            <input type="checkbox" name="fillers" id="fillers5">
+            <label for="fillers5">джемы</label>
+            <button type="submit">Применить</button>
+          </div>
+        </div>
       </form>
       <div class="catalog_content">
         <div>
           <img class="ice_cream" src="#" alt="">
           <b>310&#8381/кг</b>
-          <p>Сливочное с
+          <span>Сливочное с
             апельсиновым джемом
-            и цитрусовой стружкой</p>
+            и цитрусовой стружкой</span>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
         </div>
         <div>
           <img class="ice_cream" src="#" alt="">
           <b>380&#8381/кг</b>
-          <p>Сливочно-кофейное с
-            кусочками шоколада</p>
+          <span>Сливочно-кофейное с
+            кусочками шоколада</span>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
         </div>
         <div>
           <img class="ice_cream" src="#" alt="">
           <b>355&#8381/кг</b>
-          <p>Сливочно-клубничное с
+          <span>Сливочно-клубничное с
             присыпкой из белого
-            шоколада</p>
+            шоколада</span>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
         </div>
         <div>
@@ -121,62 +132,62 @@
           <b>415&#8381/кг</b>
           <p>Сливочное крем-брюле
             с карамельной
-            подливкой</p>
+            подливкой</span>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
         </div>
         <div>
           <img class="ice_cream" src="#" alt="">
           <b>325&#8381/кг</b>
-          <p>Сливочное с брусничным
-          джемом</p>
+          <span>Сливочное с брусничным
+          джемом</span>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
         </div>
         <div>
           <img class="ice_cream" src="#" alt="">
           <b>410&#8381/кг</b>
-          <p>Сливочно-черничное с цельными
-          ягодами черники</p>
+          <span>Сливочно-черничное с цельными
+          ягодами черники</span>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
         </div>
         <div>
           <img class="ice_cream" src="#" alt="">
           <b>375&#8381/кг</b>
-          <p>Сливочно-лимонное с
-          карамельной присыпкой</p>
+          <span>Сливочно-лимонное с
+          карамельной присыпкой</span>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
         </div>
         <div>
           <img class="ice_cream" src="#" alt="">
           <b>320&#8381/кг</b>
-          <p>Сливочное с шоколадной
-          стружкой</p>
+          <span>Сливочное с шоколадной
+          стружкой</span>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
         </div>
         <div>
           <img class="ice_cream" src="#" alt="">
           <b>440&#8381/кг</b>
-          <p>Сливочно-ванильное с
-          кусочками шоколада</p>
+          <span>Сливочно-ванильное с
+          кусочками шоколада</span>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
         </div>
         <div>
           <img class="ice_cream" src="#" alt="">
           <b>435&#8381/кг</b>
-          <p>Сливочное с ментоловым
-            сиропом</p>
+          <span>Сливочное с ментоловым
+            сиропом</span>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
         </div>
         <div>
           <img class="ice_cream" src="#" alt="">
           <b>355&#8381/кг</b>
-          <p>Сливочное с кусочками черного
-          шоколада</p>
+          <span>Сливочное с кусочками черного
+          шоколада</span>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
         </div>
         <div>
           <img class="ice_cream" src="#" alt="">
           <b>420&#8381/кг</b>
-          <p>Сливочное с мятным сиропом</p>
+          <span>Сливочное с мятным сиропом</span>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
         </div>
       </div>
