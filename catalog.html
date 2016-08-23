@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>Gllacy Shop - Каталог</title>
   </head>
   <body>
@@ -9,7 +10,7 @@
       <div class="container">
         <nav class="catalog_index">
           <a href="index.html">
-            <img class="logo_index" src="#" alt="Gllacy Shop">
+            <img class="logo_index" src="img\logo.svg" width="154" height="64" alt="Gllacy Shop">
           </a>
           <ul>
             <li>
@@ -24,9 +25,14 @@
           </ul>
         </nav>
         <div class="user_block">
-          <a class="search" href="#"><!--Поиск--></a>
-          <a class="login" href="#">Вход</a>
-          <a class="shoping_cart" href="#">2 товара</a>
+          <a class="search" href="#"><img class="search_img" src="img\search.svg" width="17" height="17"></a>
+          <a class="login" href="#"><img class="login_img" src="img\login.svg" width="21" height="19">Вход</a>
+          <a class="shoping_cart_filling" href="#">
+            <img class="basket_img" src="img\basket.svg" width="21" height="20">
+            <img class="basket_img" src="img\basket_filling.svg" width="16" height="11">
+            <!--Не смог слить слои. Наложу два изображения друг надруга или типа того-->
+            2 товара
+          </a>
         </div>
         <div class="work_info">
           <span class="work_time">С 10 до 20, ежедневно</span>
@@ -52,6 +58,9 @@
           <label for="sorting">Сортировка:</label>
           <select name="sorting">
             <option value="popularity">по популярности</option>
+            <option value="cheap">сначала недорогие</option>
+            <option value="expensive">сначала дорогие</option>
+            <option value="fatness">по жирности</option>
           </select>
         </div>
         <div class="price_catalog">
@@ -105,7 +114,7 @@
       </form>
       <div class="catalog_content">
         <div>
-          <img class="ice_cream" src="#" alt="">
+          <img class="ice_cream" src="img\ice_1.png" width="267" height="267" alt="">
           <b>310&#8381/кг</b>
           <span>Сливочное с
             апельсиновым джемом
@@ -113,14 +122,14 @@
             <a class="hidden btn" href="#">Быстрый просмотр</a>
         </div>
         <div>
-          <img class="ice_cream" src="#" alt="">
+          <img class="ice_cream" src="img\ice_2.png" width="267" height="267" alt="">
           <b>380&#8381/кг</b>
           <span>Сливочно-кофейное с
             кусочками шоколада</span>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
         </div>
         <div>
-          <img class="ice_cream" src="#" alt="">
+          <img class="ice_cream" src="img\ice_3.png" width="267" height="267" alt="">
           <b>355&#8381/кг</b>
           <span>Сливочно-клубничное с
             присыпкой из белого
@@ -128,64 +137,64 @@
             <a class="hidden btn" href="#">Быстрый просмотр</a>
         </div>
         <div>
-          <img class="ice_cream" src="#" alt="">
+          <img class="ice_cream" src="img\ice_4.png" width="267" height="267" alt="">
           <b>415&#8381/кг</b>
-          <p>Сливочное крем-брюле
+          <span>Сливочное крем-брюле
             с карамельной
             подливкой</span>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
         </div>
         <div>
-          <img class="ice_cream" src="#" alt="">
+          <img class="ice_cream" src="img\ice_5.png" width="267" height="267" alt="">
           <b>325&#8381/кг</b>
           <span>Сливочное с брусничным
           джемом</span>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
         </div>
         <div>
-          <img class="ice_cream" src="#" alt="">
+          <img class="ice_cream" src="img\ice_6.png" width="267" height="267" alt="">
           <b>410&#8381/кг</b>
           <span>Сливочно-черничное с цельными
           ягодами черники</span>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
         </div>
         <div>
-          <img class="ice_cream" src="#" alt="">
+          <img class="ice_cream" src="img\ice_7.png" width="267" height="267" alt="">
           <b>375&#8381/кг</b>
           <span>Сливочно-лимонное с
           карамельной присыпкой</span>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
         </div>
         <div>
-          <img class="ice_cream" src="#" alt="">
+          <img class="ice_cream" src="img\ice_8.png" width="267" height="267" alt="">
           <b>320&#8381/кг</b>
           <span>Сливочное с шоколадной
           стружкой</span>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
         </div>
         <div>
-          <img class="ice_cream" src="#" alt="">
+          <img class="ice_cream" src="img\ice_9.png" width="267" height="267" alt="">
           <b>440&#8381/кг</b>
           <span>Сливочно-ванильное с
           кусочками шоколада</span>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
         </div>
         <div>
-          <img class="ice_cream" src="#" alt="">
+          <img class="ice_cream" src="img\ice_10.png" width="267" height="267" alt="">
           <b>435&#8381/кг</b>
           <span>Сливочное с ментоловым
             сиропом</span>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
         </div>
         <div>
-          <img class="ice_cream" src="#" alt="">
+          <img class="ice_cream" src="img\ice_11.png" width="267" height="267" alt="">
           <b>355&#8381/кг</b>
           <span>Сливочное с кусочками черного
           шоколада</span>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
         </div>
         <div>
-          <img class="ice_cream" src="#" alt="">
+          <img class="ice_cream" src="img\ice_12.png" width="267" height="267" alt="">
           <b>420&#8381/кг</b>
           <span>Сливочное с мятным сиропом</span>
             <a class="hidden btn" href="#">Быстрый просмотр</a>
@@ -220,14 +229,14 @@
     <footer>
       <div class="container">
         <div class="social">
-          <img class="social_tw" src="#">
-          <img class="social_inst" src="#">
-          <img class="social_fb" src="#">
-          <img class="social_vk" src="#">
+          <img class="social_tw" src="img\tw.svg" width="32" height="32">
+          <img class="social_inst" src="img\instagram.svg" width="32" height="32">
+          <img class="social_fb" src="img\facebook.svg" width="32" height="32">
+          <img class="social_vk" src="img\vk.svg" width="32" height="32">
         </div>
         <div class="footer_info">
           <div class="footer_info_left">
-            <img class="heart" src="#">
+            <img class="heart" src="img\heart.svg" width="15" height="13">
             <a href="#">Для поставщиков</a>
             <a href="#">О прозводстве</a>
           </div>
@@ -237,7 +246,7 @@
           </div>
         </div>
         <div class="html_academy">
-          <img class="logo_academy" src="#">
+          <img class="logo_academy" src="img\logo_html.svg" width="108" height="37">
           Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2016
         </div>
       </div>
