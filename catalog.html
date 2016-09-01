@@ -93,23 +93,15 @@
             </div>
             <div class="fatness_catalog">
               <label for="fatness">Жирность:</label>
-              <div>
-                <label>
-                  <input type="radio" name="fatness" value="0%">
-                  0%
-                </label>
-                <label>
-                  <input type="radio" name="fatness" value="10%" checked>
-                  до 10%
-                </label>
-                <label>
-                  <input type="radio" name="fatness" value="30%">
-                  до 30%
-                </label>
-                <label>
-                  <input type="radio" name="fatness" value="above30%">
-                  выше 30%
-                </label>
+              <div class="fatness_div">
+                <input type="radio" name="fatness" value="0%" id="0">
+                <label for="0">0%</label>
+                <input type="radio" name="fatness" value="10%" id="10" checked>
+                <label for="10">до 10%</label>
+                <input type="radio" name="fatness" value="30%" id="30">
+                <label for="30">до 30%</label>
+                <input type="radio" name="fatness" value="above30%" id="above30">
+                <label for="above30">выше 30%</label>
               </div>
             </div>
             <div class="fillers_catalog">
@@ -206,29 +198,13 @@
             </div>
           </div>
           <div class="pages">
-            <ul>
-              <li>
-                &lt;
-              </li>
-              <li>
-                1
-              </li>
-              <li>
-                <a href="#">2</a>
-              </li>
-              <li>
-                <a href="#">3</a>
-              </li>
-              <li>
-                <a href="#">4</a>
-              </li>
-              <li>
-                <a href="#">5</a>
-              </li>
-              <li>
-                <a href="#">&gt;</a>
-              </li>
-            </ul>
+            <a class="prev disabled" href="#"></a>
+            <a class="current">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a class="next" href="#"></a>
           </div>
         </main>
         <footer>
