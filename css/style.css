@@ -5,6 +5,8 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
   color: white;
   background-color: #849d8f;
+  background-image: url("../img/light_bg.png");
+  background-repeat: repeat-x;
 }
 
 body > input[type="radio"] {
@@ -743,14 +745,14 @@ a {
 
 /*Fatness*/
 
+.fatness_catalog input[type="radio"] {
+  display: none;
+}
+
 .form_catalog .fatness_catalog {
   margin-right: 0;
   font-size: 14px;
   line-height: 16px;
-}
-
-.fatness_catalog label {
-  margin-right: 16px;
 }
 
 .fatness_catalog > label:first-child {
@@ -760,18 +762,62 @@ a {
   margin-right: 0;
 }
 
-.fatness_catalog label:last-child {
+.fatness_catalog div {
+  background-color: #a9bab0;
+  border-radius: 40px;
+  margin-right: 0;
+  font-size: 0;
+  padding: 8px 17px;
+}
+
+div input[type="radio"] + label {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 18px;
+  margin-right: 20px;
+  padding-left: 31px;
+  cursor: pointer;
+  z-index: 105;
+}
+
+.fatness_div label:last-child {
   margin-right: 0;
 }
 
-.fatness_catalog div {
-  background-color: #a9bab0;
-  padding: 9px 16px;
-  border-radius: 40px;
-  margin-right: 0;
-  font-size: 16px;
-  line-height: 18px;
+.fatness_div input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: url("../img/radio_off.svg") no-repeat;
+  z-index: 110;
 }
+
+.fatness_div input[type="radio"]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: url("../img/radio_on.svg") no-repeat;
+  z-index: 120;
+}
+
+.fatness_div input[type="radio"] + label:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: url("../img/radio_off_b.svg") no-repeat;
+  z-index: 130;
+}
+
 
 
 /*Fillers*/
@@ -823,9 +869,7 @@ input[type="checkbox"] {
   left: 0;
   width: 20px;
   height: 20px;
-  border: 1px solid white;
-  border-radius: 2px;
-  background-color: #a8b9af;
+  background: url("../img/chb_off.svg") no-repeat;
   z-index: 110;
 }
 
@@ -834,10 +878,25 @@ input[type="checkbox"] {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../img/checkbox.png") no-repeat;
+  background: url("../img/chb.svg") no-repeat;
   background-color: none;
+  width: 20px;
+  height: 20px;
   z-index: 120;
 }
+
+.fillers_box input[type="checkbox"] + label:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../img/chb_off_b.svg") no-repeat;
+  background-color: none;
+  width: 20px;
+  height: 20px;
+  z-index: 130;
+}
+
 
 /*Button*/
 
@@ -939,6 +998,7 @@ input[type="checkbox"] {
 }
 
 .catalog_content b {
+  position: relative;
   display: block;
   font-size: 45px;
   line-height: 45px;
@@ -946,7 +1006,8 @@ input[type="checkbox"] {
   text-align: left;
   margin-top:140px;
   margin-bottom: 30px;
-  cursor: default;
+  cursor: pointer;
+  z-index: 110;
 }
 
 .catalog_content .ice {
@@ -966,9 +1027,11 @@ input[type="checkbox"] {
 }
 
 .catalog_content span {
+  position: relative;
   border-bottom: 1px solid #c5d6cd;
   color: white;
   cursor: default;
+  z-index: 105;
 }
 
 .ice .browsing {
@@ -998,84 +1061,86 @@ input[type="checkbox"] {
   font-size: 18px;
   font-weight: bold;
   line-height: 24px;
-}
-
-
-
-.catalog_content .ice:nth-child(1) {
-  background: #849d8f url("../img/ice_1.png") no-repeat center top;
-  background-size: 200px;
-  z-index: 80;
+  z-index: 100;
 }
 
 .ice:nth-child(n):hover .browsing {
   display: block;
 }
 
-.catalog_content .ice:nth-child(2) {
-  background: #849d8f url("../img/ice_2.png") no-repeat center top;
+.ice:nth-child(n):hover span {
+  border: none;
+}
+
+.catalog_content .ice:nth-child(1) {
+  background: url("../img/ice_1.png") no-repeat center top;
   background-size: 200px;
-  z-index: 80;
+  z-index: 103;
+}
+.catalog_content .ice:nth-child(2) {
+  background: url("../img/ice_2.png") no-repeat center top;
+  background-size: 200px;
+  z-index: 103;
 }
 
 .catalog_content .ice:nth-child(3) {
-  background: #849d8f url("../img/ice_3.png") no-repeat center top;
+  background: url("../img/ice_3.png") no-repeat center top;
   background-size: 200px;
-  z-index: 80;
+  z-index: 103;
 }
 
 .catalog_content .ice:nth-child(4) {
-  background: #849d8f url("../img/ice_4.png") no-repeat center top;
+  background: url("../img/ice_4.png") no-repeat center top;
   background-size: 200px;
-  z-index: 80;
+  z-index: 103;
 }
 
 .catalog_content .ice:nth-child(5) {
-  background: #849d8f url("../img/ice_5.png") no-repeat center top;
+  background: url("../img/ice_5.png") no-repeat center top;
   background-size: 200px;
-  z-index: 70;
+  z-index: 102
 }
 
 .catalog_content .ice:nth-child(6) {
-  background: #849d8f url("../img/ice_6.png") no-repeat center top;
+  background: url("../img/ice_6.png") no-repeat center top;
   background-size: 200px;
-  z-index: 70;
+  z-index: 102
 }
 
 .catalog_content .ice:nth-child(7) {
-  background: #849d8f url("../img/ice_7.png") no-repeat center top;
+  background: url("../img/ice_7.png") no-repeat center top;
   background-size: 200px;
-  z-index: 70;
+  z-index: 102
 }
 
 .catalog_content .ice:nth-child(8) {
-  background: #849d8f url("../img/ice_8.png") no-repeat center top;
+  background: url("../img/ice_8.png") no-repeat center top;
   background-size: 200px;
-  z-index: 70;
+  z-index: 102;
 }
 
 .catalog_content .ice:nth-child(9) {
-  background: #849d8f url("../img/ice_9.png") no-repeat center top;
+  background: url("../img/ice_9.png") no-repeat center top;
   background-size: 200px;
-  z-index: 60;
+  z-index: 101;
 }
 
 .catalog_content .ice:nth-child(10) {
-  background: #849d8f url("../img/ice_10.png") no-repeat center top;
+  background: url("../img/ice_10.png") no-repeat center top;
   background-size: 200px;
-  z-index: 60;
+  z-index: 101;
 }
 
 .catalog_content .ice:nth-child(11) {
-  background: #849d8f url("../img/ice_11.png") no-repeat center top;
+  background: url("../img/ice_11.png") no-repeat center top;
   background-size: 200px;
-  z-index: 60;
+  z-index: 101;
 }
 
 .catalog_content .ice:nth-child(12) {
-  background: #849d8f url("../img/ice_12.png") no-repeat center top;
+  background: url("../img/ice_12.png") no-repeat center top;
   background-size: 200px;
-  z-index: 60;
+  z-index: 101;
 }
 
 .catalog_content .ice:nth-child(4n) {
@@ -1091,24 +1156,79 @@ input[type="checkbox"] {
 
 .pages {
   float: right;
-  width: 189px;
+  width: 200px;
+  margin-top: 5px;
   margin-bottom: 30px;
-}
-
-.pages ul {
-  margin: 0;
-  padding: 0;
   font-size: 0;
-  list-style: none;
 }
 
-.pages li {
+.pages a {
   display: inline-block;
+  vertical-align: top;
+  text-align: center;
   font-size: 16px;
-  font-weight: 18px;
-  margin-right: px;
+  line-height: 18px;
+  width: 26px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-right: 3px;
+  border-radius: 13px;
+  border: none;
 }
 
+.pages .prev,
+.pages .next {
+ height: 26px;
+ padding: 0;
+}
+
+.pages .prev {
+  background: url("../img/prev.svg") no-repeat center;
+  background-color: none;
+}
+
+.pages .next {
+  background: url("../img/prev.svg") no-repeat center;
+  background-color: none;
+  transform: rotate(180deg);
+  margin-right: 0;
+}
+
+.pages .disabled {
+  opacity: 0.2;
+}
+
+.pages .current {
+  background-color: white;
+  color: #323232;
+}
+
+.pages a:hover {
+  background-color: #9db1a5;
+  color: white;
+  cursor: pointer;
+}
+
+.pages .current:hover {
+  background-color: white;
+  color: #323232;
+  cursor: default;
+}
+
+.pages .disabled:hover,
+.pages a:last-child:hover {
+  background-color: inherit;
+}
+
+.pages .disabled:hover {
+  cursor: default;
+}
+
+.pages a:active {
+  background-color: white;
+  color: #323232;
+  cursor: pointer;
+}
 
 /*Info*/
 /*Как выравнять посл иконку?*/
@@ -1125,8 +1245,16 @@ input[type="checkbox"] {
 }
 
 .info h3 {
-  margin-bottom: 8px;
-  margin-top: 0;
+  margin-bottom: 13px;
+  margin-top: 2px;
+}
+
+.info_top {
+  min-height: 122px;
+}
+
+.info_bottom {
+  min-height: 122px;
 }
 
 .info_left {
@@ -1139,14 +1267,15 @@ input[type="checkbox"] {
   width: 400px;
 }
 
-.info_div img {
+.info img {
   float: left;
   width: 48px;
+  margin-right: 8px;
+  margin-bottom: 70px;;
 }
 
-.info_div p {
-  float: right;
-  width: 343px;
+.info p {
+  margin-top:13px;
 }
 
 
@@ -1336,17 +1465,7 @@ footer {
 .footer_info_left img {
   float: left;
   width: 15px;
-}
-
-.footer_info_left a:first-child {
-  float: right;
-  width: 111px;
-}
-
-.footer_info_left a:last-child {
-  float: left;
-  width: 91px;
-  margin-left: 15px;
+  padding-bottom: 15px;
 }
 
 .footer_info_right {
