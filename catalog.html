@@ -17,9 +17,9 @@
             </a>
             <nav class="catalog_index">
               <ul class="ul_catalog">
-                <div class="sub_catalog">
-                  <li class="li_catalog selected_catalog">
-                    <a>Каталог</a>
+                <li class="li_catalog selected_catalog">
+                  <a>Каталог</a>
+                  <div class="sub_catalog">
                     <ul class="sub_menu">
                       <li>Новинки</li>
                       <li class="selected">Сливочное</li>
@@ -27,8 +27,8 @@
                       <li>Фруктовый лед</li>
                       <li>Мелорин</li>
                     </ul>
-                  </li>
-                </div>
+                  </div>
+                </li>
                 <li>
                   <a>Доставка и оплата</a>
                 </li>
@@ -39,12 +39,12 @@
             </nav>
             <div class="user_block">
               <a class="search" href="#"><img class="search_img" src="img/search.svg" width="17" height="17" alt=""></a>
-              <a class="login" href="#"><img class="login_img" src="img/login.svg" width="21" height="19" alt="">Вход</a>
+              <a class="login" href="#"><img class="login_img" src="img/login.svg" width="21" height="19" alt=""><span> Вход</span></a>
               <a class="shoping_cart_filling" href="#">
                 <img class="basket_black" src="img/basket_black.svg" width="21" height="20" alt="">
                 <img class="basket_red" src="img/basket_filling.svg" width="16" height="11" alt="">
                 <!--Не смог слить слои. Наложу два изображения друг надруга или типа того-->
-                2 товара
+                <span> 2 товара</span>
               </a>
             </div>
           </div>
@@ -71,7 +71,7 @@
           <form class="form_catalog" action="#" method="post">
             <div class="sorting_catalog">
               <label for="sorting">Сортировка:</label>
-              <select name="sorting">
+              <select name="sorting" id="sorting">
                 <option value="popularity">по популярности</option>
                 <option value="cheap">сначала недорогие</option>
                 <option value="expensive">сначала дорогие</option>
@@ -92,7 +92,7 @@
               </div>
             </div>
             <div class="fatness_catalog">
-              <label for="fatness">Жирность:</label>
+              <div>Жирность:</div>
               <div class="fatness_div">
                 <input type="radio" name="fatness" value="0%" id="0">
                 <label for="0">0%</label>
@@ -105,7 +105,7 @@
               </div>
             </div>
             <div class="fillers_catalog">
-              <label for="fillers">Наполнители:</label>
+              <div>Наполнители:</div>
               <div class="fillers_box">
                 <input type="checkbox" name="fillers" id="fillers1" checked>
                 <label for="fillers1">шоколадные</label>
@@ -116,7 +116,7 @@
                 <input type="checkbox" name="fillers" id="fillers4">
                 <label for="fillers4">сиропы</label>
                 <input type="checkbox" name="fillers" id="fillers5">
-                <label class="ls_fill" for="fillers5">джемы</label>
+                <label for="fillers5">джемы</label>
               </div>
             </div>
             <button type="submit">Применить</button>
@@ -198,7 +198,7 @@
             </div>
           </div>
           <div class="pages">
-            <a class="prev disabled" href="#"></a>
+            <a class="prev disabled"></a>
             <a class="current">1</a>
             <a href="#">2</a>
             <a href="#">3</a>
