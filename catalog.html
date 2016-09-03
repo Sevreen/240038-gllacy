@@ -38,19 +38,45 @@
               </ul>
             </nav>
             <div class="user_block">
-              <a class="search" href="#"><img class="search_img" src="img/search.svg" width="17" height="17" alt=""></a>
-              <a class="login" href="#"><img class="login_img" src="img/login.svg" width="21" height="19" alt=""><span> Вход</span></a>
-              <a class="shoping_cart_filling" href="#">
-                <img class="basket_black" src="img/basket_black.svg" width="21" height="20" alt="">
-                <img class="basket_red" src="img/basket_filling.svg" width="16" height="11" alt="">
-                <!--Не смог слить слои. Наложу два изображения друг надруга или типа того-->
-                <span> 2 товара</span>
-              </a>
+              <div class="search">
+                <div class="wrapper_form_search">
+                  <div class="div_form_search">
+                    <form class="form_search">
+                      <input type="search" id="search" name="search" placeholder="Что ищем?">
+                      <span class="placeholder">Что ищем?</span>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="login">
+                Вход
+                <div class="wrapper_form_login">
+                  <div class="div_form_login">
+                    <form class="form_login clearfix" action="#" method="post">
+                      <input type="email" id="email_login" name="email_login" placeholder="Электронная почта" required>
+                      <span class="placeholder_email">Электронная почта</span>
+                      <input type="password" id="password" name="password" placeholder="Пароль" required>
+                      <span class="placeholder_pass">Пароль</span>
+                      <div class="form_login_div">
+                        <div class="btn_div">
+                          <button class="btn" type="submit">Войти</button>
+                        </div>
+                        <div class="a_div">
+                          <a class="a_wh_bg" href="#">Забыли пароль?</a>
+                          <a class="a_wh_bg" href="#">Новая регистрация</a></div>
+                        </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="cart_fill">
+                2 товара
+              </div>
             </div>
           </div>
           <div class="work_info">
-            <span class="work_time">С 10 до 20, ежедневно</span><br>
-            <span class="work_tel">8 812 450-25-25</span>
+            <div class="work_time">С 10 до 20, ежедневно</div>
+            <div class="work_tel">8 812 450-25-25</div>
           </div>
         </header>
         <main class="container clearfix">
@@ -79,7 +105,7 @@
               </select>
             </div>
             <div class="price_catalog">
-              <span>Цена: 100 руб. - 500 руб.</span>
+              <span>Цена: 100 руб. — 500 руб.</span>
               <!--Должно быть два ползунка-->
               <!--Slider_left/right - точки/ползунки,
               scale -вся шкала,
@@ -122,78 +148,78 @@
             <button type="submit">Применить</button>
           </form>
           <div class="catalog_content">
-            <div class="ice">
-              <b>310&#8381;/кг</b>
-              <div><span>Сливочное с
+            <div class="ice_catalog">
+              <b>310&#8381;<span class="ice_catalog_span">/кг</span></b>
+              <div><span class="ice_span">Сливочное с
                 апельсиновым джемом
                 и цитрусовой стружкой</span></div>
               <div class ="browsing"><a class="hidden btn" href="#">Быстрый просмотр</a></div>
             </div>
-            <div class="ice">
-              <b>380&#8381;/кг</b>
-              <div><span>Сливочно-кофейное с
+            <div class="ice_catalog">
+              <b>380&#8381;<span class="ice_catalog_span">/кг</span></b>
+              <div><span class="ice_span">Сливочно-кофейное с
                 кусочками шоколада</span></div>
               <div class ="browsing"><a class="hidden btn" href="#">Быстрый просмотр</a></div>
             </div>
-            <div class="ice">
-              <b>355&#8381;/кг</b>
-              <div><span>Сливочно-клубничное с
+            <div class="ice_catalog">
+              <b>355&#8381;<span class="ice_catalog_span">/кг</span></b>
+              <div><span class="ice_span">Сливочно-клубничное с
                 присыпкой из белого
                 шоколада</span></div>
               <div class ="browsing"><a class="hidden btn" href="#">Быстрый просмотр</a></div>
             </div>
-            <div class="ice">
-              <b>415&#8381;/кг</b>
-              <div><span>Сливочное крем-брюле
+            <div class="ice_catalog">
+              <b>415&#8381;<span class="ice_catalog_span">/кг</span></b>
+              <div><span class="ice_span">Сливочное крем-брюле
                 с карамельной
                 подливкой</span></div>
               <div class ="browsing"><a class="hidden btn" href="#">Быстрый просмотр</a></div>
             </div>
-            <div class="ice">
-              <b>325&#8381;/кг</b>
-              <div><span>Сливочное с брусничным
+            <div class="ice_catalog">
+              <b>325&#8381;<span class="ice_catalog_span">/кг</span></b>
+              <div><span class="ice_span">Сливочное с брусничным
               джемом</span></div>
               <div class ="browsing"><a class="hidden btn" href="#">Быстрый просмотр</a></div>
             </div>
-            <div class="ice">
-              <b>410&#8381;/кг</b>
-              <div><span>Сливочно-черничное с цельными
+            <div class="ice_catalog">
+              <b>410&#8381;<span class="ice_catalog_span">/кг</span></b>
+              <div><span class="ice_span">Сливочно-черничное с цельными
               ягодами черники</span></div>
               <div class ="browsing"><a class="hidden btn" href="#">Быстрый просмотр</a></div>
             </div>
-            <div class="ice">
-              <b>375&#8381;/кг</b>
-              <div><span>Сливочно-лимонное с
+            <div class="ice_catalog">
+              <b>375&#8381;<span class="ice_catalog_span">/кг</span></b>
+              <div><span class="ice_span">Сливочно-лимонное с
               карамельной присыпкой</span></div>
               <div class ="browsing"><a class="hidden btn" href="#">Быстрый просмотр</a></div>
             </div>
-            <div class="ice">
-              <b>320&#8381;/кг</b>
-              <div><span>Сливочное с шоколадной
+            <div class="ice_catalog">
+              <b>320&#8381;<span class="ice_catalog_span">/кг</span></b>
+              <div><span class="ice_span">Сливочное с шоколадной
               стружкой</span></div>
               <div class ="browsing"><a class="hidden btn" href="#">Быстрый просмотр</a></div>
             </div>
-            <div class="ice">
-              <b>440&#8381;/кг</b>
-              <div><span>Сливочно-ванильное с
+            <div class="ice_catalog">
+              <b>440&#8381;<span class="ice_catalog_span">/кг</span></b>
+              <div><span class="ice_span">Сливочно-ванильное с
               кусочками шоколада</span></div>
               <div class ="browsing"><a class="hidden btn" href="#">Быстрый просмотр</a></div>
             </div>
-            <div class="ice">
-              <b>435&#8381;/кг</b>
-              <div><span>Сливочное с ментоловым
+            <div class="ice_catalog">
+              <b>435&#8381;<span class="ice_catalog_span">/кг</span></b>
+              <div><span class="ice_span">Сливочное с ментоловым
                 сиропом</span></div>
               <div class ="browsing"><a class="hidden btn" href="#">Быстрый просмотр</a></div>
             </div>
-            <div class="ice">
-              <b>355&#8381;/кг</b>
-              <div><span>Сливочное с кусочками черного
+            <div class="ice_catalog">
+              <b>355&#8381;<span class="ice_catalog_span">/кг</span></b>
+              <div><span class="ice_span">Сливочное с кусочками черного
               шоколада</span></div>
               <div class ="browsing"><a class="hidden btn" href="#">Быстрый просмотр</a></div>
             </div>
-            <div class="ice">
-              <b>420&#8381;/кг</b>
-              <div><span>Сливочное с мятным сиропом</span></div>
+            <div class="ice_catalog">
+              <b>420&#8381;<span class="ice_catalog_span">/кг</span></b>
+              <div><span class="ice_span">Сливочное с мятным сиропом</span></div>
               <div class ="browsing"><a class="hidden btn" href="#">Быстрый просмотр</a></div>
             </div>
           </div>
@@ -207,7 +233,7 @@
             <a class="next" href="#"></a>
           </div>
         </main>
-        <footer>
+        <footer class="footer_catalog">
           <div class="container clearfix">
             <div class="social">
               <a class="tw" href="#"></a>

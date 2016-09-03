@@ -35,9 +35,40 @@
               </ul>
             </nav>
             <div class="user_block">
-              <a class="search" href="#"><img class="search_img" src="img/search.svg" width="17" height="17" alt=""></a>
-              <a class="login" href="#"><img class="login_img" src="img/login.svg" width="21" height="19" alt=""><span> Вход</span></a>
-              <a class="shoping_cart" href="#"><img class="basket_img" src="img/basket.svg" width="21" height="20" alt=""><span> Пусто</span></a>
+              <div class="search">
+                <div class="wrapper_form_search">
+                  <div class="div_form_search">
+                    <form class="form_search">
+                      <input type="search" id="search" name="search" placeholder="Что ищем?">
+                      <span class="placeholder">Что ищем?</span>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="login">
+                Вход
+                <div class="wrapper_form_login">
+                  <div class="div_form_login">
+                    <form class="form_login clearfix" action="#" method="post">
+                      <input type="email" id="email_login" name="email_login" placeholder="Электронная почта" required>
+                      <span class="placeholder_email">Электронная почта</span>
+                      <input type="password" id="password" name="password" placeholder="Пароль" required>
+                      <span class="placeholder_pass">Пароль</span>
+                      <div class="form_login_div">
+                        <div class="btn_div">
+                          <button class="btn" type="submit">Войти</button>
+                        </div>
+                        <div class="a_div">
+                          <a class="a_wh_bg" href="#">Забыли пароль?</a>
+                          <a class="a_wh_bg" href="#">Новая регистрация</a></div>
+                        </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="shoping_cart">
+                Пусто
+              </div>
             </div>
           </div>
           <div class="work_info">
@@ -178,6 +209,7 @@
                 </p>
                 <form class="form_news" action="#" method="post">
                   <input type="email" placeholder="Электронная почта" required>
+                  <span class="placeholder_email">Электронная почта</span>
                   <button class="btn" type="submit">Отправить</button>
                 </form>
               </div>
