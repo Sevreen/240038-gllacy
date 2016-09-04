@@ -114,27 +114,27 @@
           </div>
           <div class="hit">
             <div class="ice">
-              <img src="img/hit.png" width="60" height="60" alt="">
+              <img src="img/ice_1.png" width="200" height="200" alt="">
               <b>310&#8381;<span>/кг</span></b>
               <div><a class="a_bl_bg" href="#">Сливочное с
                 апельсиновым джемом
                 и цитрусовой стружкой</a></div>
             </div>
             <div class="ice">
-              <img src="img/hit.png" width="60" height="60" alt="">
+              <img src="img/ice_2.png" width="200" height="200" alt="">
               <b>380&#8381;<span>/кг</span></b>
               <div><a class="a_bl_bg" href="#">Сливочно-кофейное с
                 кусочками шоколада</a></div>
             </div>
             <div class="ice">
-              <img src="img/hit.png" width="60" height="60" alt="">
+              <img src="img/ice_3.png" width="200" height="200" alt="">
               <b>355&#8381;<span>/кг</span></b>
               <div><a class="a_bl_bg" href="#">Сливочно-клубничное с
                 присыпкой из белого
                 шоколада</a></div>
             </div>
             <div class="ice">
-              <img src="img/hit.png" width="60" height="60" alt="">
+              <img src="img/ice_4.png" width="200" height="200" alt="">
               <b>415&#8381;<span>/кг</span></b>
               <div><a class="a_bl_bg" href="#">Сливочное крем-брюле
                 с карамельной
@@ -228,7 +228,7 @@
             <b>8 812 450-25-25</b>
             (с 10 до 20 ежедневно)
           </p>
-          <a class="btn" href="#">Форма обратной связи</a>
+          <a class="btn btn_feedback" href="#">Форма обратной связи</a>
         </address>
       </div>
       <div class="content_wrapper">
@@ -261,5 +261,47 @@
         </footer>
       </div>
     </div>
+    <div class="modal_content">
+      <button class="modal_content_close" type="button" title="Закрыть">Закрыть</button>
+      <h2 class="modal_content_title">Мы обязательно вам ответим!</h2>
+      <form class="modal_content_form" action="#" method="post">
+        <input type="text" name="name" placeholder="Как вас зовут?" required>
+        <span class="placeholder_name">Как вас зовут?</span>
+        <input type="email"  name="email_feedback" placeholder="Ваша почта для ответа?" required>
+        <span class="placeholder_email">Ваша почта для ответа?</span>
+        <textarea name="feedback" placeholder="Напишите что-нибудь..." required></textarea>
+        <span class="placeholder_text">Напишите что-нибудь...</span>
+        <button class="btn" type="submit">Отправить</button>
+      </form>
+    </div>
+    <div class="modal_overlay"></div>
+    <script>
+      var link = document.querySelector(".btn_feedback");
+      var overlay = document.querySelector(".modal_overlay");
+
+      var popup = document.querySelector(".modal_content");
+      var close = popup.querySelector(".modal_content_close");
+
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("modal_content_show");
+        overlay.classList.add("modal_content_show");
+      });
+
+      close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("modal_content_show");
+        overlay.classList.remove("modal_content_show");
+      });
+
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (popup.classList.contains("modal_content_show")) {
+            popup.classList.remove("modal_content_show");
+            overlay.classList.remove("modal_content_show");
+          }
+        }
+      });
+    </script>
   </body>
 </html>
