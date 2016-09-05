@@ -16,23 +16,6 @@ body > input[type='radio']
     display: none;
 }
 
-input[type='search']
-{
-    font-size: 14px;
-    line-height: 24px;
-
-    width: 100%;
-    padding: 9px 14px;
-    padding-right: 1px;
-
-    border: 1px solid #d3d3d2;
-    border-radius: 5px;
-}
-
-
-
-
-
 .site_wrapper
 {
     min-width: 900px;
@@ -554,7 +537,6 @@ a
 
 .search .div_form_search
 {
-    width: 311px;
     padding: 20px 15px;
 
     border-radius: 5px;
@@ -562,22 +544,30 @@ a
     box-shadow: 0 15px 15px 5px rgba(50, 50, 50, .3);
 }
 
-.div_form_search .form_search
+.form_search input[type='text']
 {
-    position: relative;
+    font-size: 14px;
+    line-height: 24px;
+
+    width: 294px;
+    padding: 9px 13px;
+    padding-right: 1px;
+
+    border: 1px solid #d3d3d2;
+    border-radius: 5px;
 }
 
-.form_search input[type='search']:hover
+.form_search input[type='text']:hover
 {
-    padding: 8px 13px;
+    padding: 8px 12px;
     padding-right: 0;
 
     border-width: 2px;
 }
 
-.form_search input[type='search']:focus
+.form_search input[type='text']:focus
 {
-    padding: 8px 13px;
+    padding: 8px 12px;
     padding-right: 0;
 
     border: 2px solid #8fbdec;
@@ -631,7 +621,7 @@ a
 .wrapper_form_login
 {
     position: absolute;
-    z-index: 209;
+    z-index: 20;
     top: 17px;
     right: 0;
 
@@ -649,11 +639,6 @@ a
     border-radius: 5px;
     background-color: #f8f7f4;
     box-shadow: 0 15px 15px 5px rgba(50, 50, 50, .3);
-}
-
-.div_form_login .form_login
-{
-    position: relative;
 }
 
 .form_login input
@@ -2253,6 +2238,7 @@ input[type='checkbox']
 
     padding: 11px 18px;
     padding-top: 9px;
+
     outline: none;
 }
 
