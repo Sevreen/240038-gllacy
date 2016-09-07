@@ -214,6 +214,9 @@ a
 .ul_catalog a
 {
     cursor: default;
+    text-decoration: underline;
+
+    border: none;
 }
 
 .ul_catalog > li
@@ -237,7 +240,12 @@ a
     margin-left: 29px;
 }
 
-.catalog_index .li_catalog
+.li_catalog
+{
+    margin-right: 13px;
+}
+
+.li_catalog > a
 {
     font-size: 16px;
     line-height: 18px;
@@ -246,7 +254,6 @@ a
     z-index: 17;
 
     margin-top: 15px;
-    margin-right: 13px;
     padding: 7px 14px;
     padding-top: 7px;
 }
@@ -256,26 +263,26 @@ a
     padding-top: 20px;
 }
 
-.li_catalog:hover .sub_catalog
+.li_catalog:hover .sub_catalog,
+.li_catalog > a:hover + .sub_catalog
 {
     display: block;
 }
 
-.li_catalog:hover
+
+.li_catalog:hover > a,
+.li_catalog > a:hover
 {
     cursor: default;
+    text-decoration: none;
 
+    color: #333;
+    border: none;
     border-radius: 50px;
     background-color: #f7f6f3;
 }
 
-.li_catalog:hover > a
-{
-    color: #333;
-    border: none;
-}
-
-.li_catalog:active
+.li_catalog > a:active
 {
     box-shadow: inset 0 2px 1px 0 #696969;
 }
@@ -396,29 +403,21 @@ a
     border-radius: 0 0 4px 4px;
 }
 
-.selected_catalog
+.selected_catalog > a
 {
+    text-decoration: none;
+
     border: none;
     border-radius: 30px;
     background-color: #d07058;
 }
 
-.selected_catalog a
-{
-    border: none;
-}
-
-.ul_catalog .selected_catalog:hover,
-.ul_catalog .selected_catalog:active
-{
-    background-color: #d07058;
-    box-shadow: none;
-}
-
-.selected_catalog:hover a,
-.selected_catalog:active a
+.selected_catalog:hover > a,
+.selected_catalog:active > a
 {
     color: white;
+    background-color: #d07058;
+    box-shadow: none;
 }
 
 .selected
